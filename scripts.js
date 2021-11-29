@@ -1,7 +1,6 @@
-<script>
-jQuery(document).ready (function($){
-    $('nav').click(function(){
-        $('.content').toggleclass('menu-link');
+jQuery(document).ready (function(){
+    $('.burger-png').click(function(){
+        $('nav').toggleclass('.content');
     });
 });
-</script> 
+ 
