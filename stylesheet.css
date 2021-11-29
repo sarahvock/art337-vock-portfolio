@@ -2,50 +2,27 @@
 
 /* This is the Menu Code */
 
-/* Dropdown Button */
-.dropbtn {
-  background-color: #3498DB;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
+.nav {
+  float:right;
+}
+
+.burger-png {
+  position:absolute;
+  width: 10%;
+  justify-content:right;
+  padding-left: 85%;
+  padding-top: 5%;
   cursor: pointer;
 }
 
-/* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #2980B9;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
+.content {
+  list-style: none;
   display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
 }
 
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+.content.hidden {
+  display:block;
 }
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd}
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
 
 .gif {
     position: relative;
@@ -146,14 +123,14 @@ p {
 
 .framework {
     border-style: solid;
-    border-color: rgb(255, 255, 255):
+    border-color: rgb(255, 255, 255);
 }
 
 .work {
     width: 60%;
     padding-left: 20%;
     border-style: solid;
-    border-color: rgb(255, 255, 255):
+    border-color: rgb(255, 255, 255);
 }
 
 /*@media only screen and (max-width: 600px) {
