@@ -2,16 +2,87 @@
 
 /* This is the Menu Code */
 
-.nav {
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: black;
+  position: relative;
+  border-style: dashed;
+  border-color: blue;
+}
+
+.active {
+  border-style:dashed;
+  border-color: red;
+
+}
+
+.icon {
+  border-style:dashed;
+  border-color: green;
+}
+
+
+/* dropdown menu sizing*/
+#mylinks {
+  border-style:dashed;
+  border-color: yellow;
+  width: 20%;
+  padding-left: 80%;
+
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color:#2ADBD3;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Open Sans';
+  font-weight: bold;
+  font-size: 17px;
+  text-align: right;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+i {
+  color:#7AEC29 ;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: teal;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: black;
+}
+
+/*.nav {
   float:right;
 }
 
 .burger-png {
   position:absolute;
-  width: 10%;
+  width: 5%;
   justify-content:right;
-  padding-left: 85%;
-  padding-top: 5%;
+  padding-left: 92%;
+  padding-top: 7%;
   cursor: pointer;
 }
 
@@ -22,12 +93,13 @@
 
 .content.hidden {
   display:block;
-}
+}*/
 
 .gif {
     position: relative;
     width:15%;
     left: 5px;
+    padding-top:-5%;
 }
 
 /*ul {
@@ -54,42 +126,41 @@
     border-style: double;
     border-color:rgb(175, 79, 14);
     background-color: gray;
-  }*/
- 
-  /* Change the link color to #111 (black) on hover */
+  }
+  
   li a:hover {
     background-color: lightgray;
-  }
+  }*/
 
 body {
    background-color: black; 
-   font-family: 'Open Sans', sans-serif, extrabold;
-   font-weight: bolder; 
+   font-family: 'Open Sans', sans-serif;
+   font-weight: bold;
 }
 
-h1 {
+.fluid {
     color: #EC2B7B;
     font-family: 'Sansita', sans-serif;
     font-size: 3.5vw;
     position:absolute;
     margin-left: 16%;
-    margin-top: -7%;
+    margin-top: -10%;
 }
 
-h3{
+.creative {
     color: #E9D72A;
     font-family: 'Sansita', sans-serif;
     font-size: 3.5vw;
     position:absolute;
     margin-left: 15.3%;
-    margin-top: -3.5%;
+    margin-top: -6.5%;
     
 }
 
-h2 {
+.recent {
     color:#A26FAE;
     font-family: 'Sansita', sans-serif;
-    font-size: 10vw;
+    font-size: 7vw;
     position: relative;
     width: 20%;
     margin-top: 0px;
@@ -101,11 +172,15 @@ h2 {
     align-items: left;
 }
 
+.work {
+  width: 45%;
+  padding-left: 30%;
+}
 
 p {
     color: white;
     font-family: 'Open Sans', sans-serif;
-    font-weight: bolder;
+    font-style: bold;
     font-size: 1.5vw;
     margin-top: 0.5%;
     margin-bottom: 0.5%;
@@ -123,17 +198,10 @@ p {
     height: 500px;
 }*/
 
-.framework {
+/*.framework {
     border-style: solid;
     border-color: rgb(255, 255, 255);
-}
-
-.work {
-    width: 60%;
-    padding-left: 20%;
-    border-style: solid;
-    border-color: rgb(255, 255, 255);
-}
+}*/
 
 /*@media only screen and (max-width: 600px) {
     ul{
