@@ -7,11 +7,11 @@
   overflow: hidden;
   background-color: black;
   position: relative;
-  border-style: dashed;
-  border-color: blue;
+ /* border-style: dashed;
+  border-color: blue;*/
 }
 
-.active {
+/*.active {
   border-style:dashed;
   border-color: red;
 
@@ -20,13 +20,13 @@
 .icon {
   border-style:dashed;
   border-color: green;
-}
+}*/
 
 
 /* dropdown menu sizing*/
 #mylinks {
-  border-style:dashed;
-  border-color: yellow;
+  /*border-style:dashed;
+  border-color: yellow;*/
   width: 20%;
   padding-left: 80%;
 
@@ -64,36 +64,14 @@ i {
 
 /* Add a grey background color on mouse-over */
 .topnav a:hover {
-  background-color: teal;
-  color: black;
+  background-color:#EB6D29;
+  color: #2adbd3;
 }
 
 /* Style the active link (or home/logo) */
 .active {
   background-color: black;
 }
-
-/*.nav {
-  float:right;
-}
-
-.burger-png {
-  position:absolute;
-  width: 5%;
-  justify-content:right;
-  padding-left: 92%;
-  padding-top: 7%;
-  cursor: pointer;
-}
-
-.content {
-  list-style: none;
-  display: none;
-}
-
-.content.hidden {
-  display:block;
-}*/
 
 .gif {
     position: relative;
@@ -102,35 +80,6 @@ i {
     padding-top:-5%;
 }
 
-/*ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color:white;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  } 
-  
-  .active {
-    border-style: double;
-    border-color:rgb(175, 79, 14);
-    background-color: gray;
-  }
-  
-  li a:hover {
-    background-color: lightgray;
-  }*/
 
 body {
    background-color: black; 
@@ -186,39 +135,6 @@ p {
     margin-bottom: 0.5%;
     margin-left: 20.5%;
 }
-/*.menu {
-    background-color: gold;
-    border-style: solid;
-    border-color: white;
-}*/
 
-/*.image1 {
-    background-color: gold;
-    width: 500px;
-    height: 500px;
-}*/
 
-/*.framework {
-    border-style: solid;
-    border-color: rgb(255, 255, 255);
-}*/
-
-/*@media only screen and (max-width: 600px) {
-    ul{
-        background-color: rgb(175, 79, 14);
-    }
-    .active {
-        background-color: rgb(175, 79, 14);
-      }
-    li a{
-        color:rgb(255, 196, 0);
-    }
-    body {
-      background-color: gold;
-    }
-    
-    p {
-        color: rgb(53, 25, 7);
-    }*/
- 
 
