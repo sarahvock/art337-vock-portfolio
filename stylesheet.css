@@ -2,82 +2,74 @@
 
 /* This is the Menu Code */
 
-/* Style the navigation menu */
-.topnav {
-  overflow: hidden;
-  background-color: black;
-  position: relative;
- /* border-style: dashed;
-  border-color: blue;*/
-}
-
-/*.active {
-  border-style:dashed;
-  border-color: red;
-
-}
-
-.icon {
-  border-style:dashed;
-  border-color: green;
-}*/
-
-
-/* dropdown menu sizing*/
-#mylinks {
-  /*border-style:dashed;
-  border-color: yellow;*/
-  width: 20%;
-  padding-left: 80%;
-
-}
-
-/* Hide the links inside the navigation menu (except for logo/home) */
-.topnav #myLinks {
-  display: none;
-}
-
-/* Style navigation menu links */
-.topnav a {
-  color:#2ADBD3;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-family: 'Open Sans';
-  font-weight: bold;
-  font-size: 17px;
-  text-align: right;
-  display: block;
-}
-
-/* Style the hamburger menu */
-.topnav a.icon {
-  background: black;
-  display: block;
-  position: absolute;
-  right: 0;
+/* The sidepanel menu */
+.sidepanel {
+  height: 25vw; /* Specify a height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: absolute; /* Stay in place */
+  z-index: 1; /* Stay on top */
   top: 0;
+  background-color:black; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 0; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+  margin-left: 84%;
+  margin-top: 6%;
+  padding-top: 1%;
 }
 
-i {
-  color:#7AEC29 ;
+/* The sidepanel links */
+.sidepanel a {
+  margin-top: 15%;
+  text-decoration: none;
+  font-size: 2vw;
+  font-family: 'Open Sans', sans-serif; 
+  font-weight: bold;
+  color:#2ADBD3;
+  display: block;
+  transition: 0.3s;
+  text-align: right;
+  padding-top: 10%;
 }
 
-/* Add a grey background color on mouse-over */
-.topnav a:hover {
-  background-color:#EB6D29;
-  color: #2adbd3;
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+  color:#EB6D29;
 }
 
-/* Style the active link (or home/logo) */
-.active {
-  background-color: black;
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  font-size: 3vw;
+  box-align: top;
+  margin-left: 85%;
+  margin-top: -5%;
+  margin-bottom: 15%;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+  font-size: 4vw;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #7AEC29;
+  margin-top: -10%;
+  margin-left: 92%;
+  outline: none;
+  
+}
+
+.openbtn:hover {
+  color: #2ADBD3;
 }
 
 .gif {
     position: relative;
-    width:15%;
-    left: 5px;
-    padding-top:-5%;
+    width:13%;
+    left: 1%;
+    padding-top: 0;
 }
 
 
@@ -85,24 +77,25 @@ body {
    background-color: black; 
    font-family: 'Open Sans', sans-serif;
    font-weight: bold;
+   font-size: 1vw;
 }
 
 .fluid {
     color: #EC2B7B;
     font-family: 'Sansita', sans-serif;
-    font-size: 3.5vw;
+    font-size: 3vw;
     position:absolute;
-    margin-left: 16%;
-    margin-top: -10%;
+    margin-left: 15.7%;
+    margin-top: -6%;
 }
 
 .creative {
     color: #E9D72A;
     font-family: 'Sansita', sans-serif;
-    font-size: 3.5vw;
+    font-size: 3vw;
     position:absolute;
-    margin-left: 15.3%;
-    margin-top: -6.5%;
+    margin-left: 15%;
+    margin-top: -3%;
     
 }
 
@@ -114,7 +107,7 @@ body {
     width: 20%;
     margin-top: 0px;
     margin-bottom:0px;
-    margin-left: 48%;
+    margin-left: 55%;
 }
 
 .fullwork {
@@ -122,7 +115,7 @@ body {
 }
 
 .work {
-  width: 45%;
+  width: 48%;
   padding-left: 30%;
 }
 
@@ -133,8 +126,23 @@ p {
     font-size: 1.5vw;
     margin-top: 0.5%;
     margin-bottom: 0.5%;
-    margin-left: 20.5%;
+    margin-left: 30%;
 }
 
+@media only screen and (max-width: 930px) {
+  .recent {
+    margin-left: 63%;
+  }
+
+  .work {
+    width: 65%;
+    padding-left: 20%;
+  }
+
+  p {
+    margin-left: 20%;
+  }
+  
+}
 
 
