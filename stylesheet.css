@@ -4,7 +4,7 @@
 
 /* The sidepanel menu */
 .sidepanel {
-  height: 25vw; /* Specify a height */
+  height: 200px; /* Specify a height */
   width: 0; /* 0 width - change this with JavaScript */
   position: absolute; /* Stay in place */
   z-index: 1; /* Stay on top */
@@ -13,23 +13,35 @@
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 0; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
-  margin-left: 84%;
-  margin-top: 6%;
-  padding-top: 1%;
+  margin-left: 1500px;
+  margin-top: 90px;
+  padding-top: 5px;
+  border-style:dashed;
+  border-color: yellow;
 }
 
 /* The sidepanel links */
 .sidepanel a {
-  margin-top: 15%;
   text-decoration: none;
-  font-size: 2vw;
+  font-size: 25px;
   font-family: 'Open Sans', sans-serif; 
   font-weight: bold;
   color:#2ADBD3;
   display: block;
   transition: 0.3s;
   text-align: right;
-  padding-top: 10%;
+}
+
+.about {
+  margin-top: 40px;
+}
+
+.portfolio{
+  padding-top: 5px;
+}
+
+.recent {
+  padding-top: 5px;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -41,22 +53,22 @@
 .sidepanel .closebtn {
   position: absolute;
   top: 0;
-  font-size: 3vw;
+  font-size: 40px;
   box-align: top;
-  margin-left: 85%;
-  margin-top: -5%;
-  margin-bottom: 15%;
+  margin-top: 0;
+  margin-left: 125px;
+  margin-bottom: 15px;
 }
 
 /* Style the button that is used to open the sidepanel */
 .openbtn {
-  font-size: 4vw;
+  font-size: 60px;
   cursor: pointer;
   background: none;
   border: none;
   color: #7AEC29;
-  margin-top: -10%;
-  margin-left: 92%;
+  margin-top: -80px;
+  margin-left: 1650px;
   outline: none;
   
 }
@@ -67,8 +79,8 @@
 
 .gif {
     position: relative;
-    width:13%;
-    left: 1%;
+    width:120px;
+    left:5px;
     padding-top: 0;
 }
 
@@ -77,59 +89,67 @@ body {
    background-color: black; 
    font-family: 'Open Sans', sans-serif;
    font-weight: bold;
-   font-size: 1vw;
+   font-size: 12px;
 }
 
 .fluid {
     color: #EC2B7B;
     font-family: 'Sansita', sans-serif;
-    font-size: 3vw;
+    font-size: 35px;
     position:absolute;
-    margin-left: 15.7%;
-    margin-top: -6%;
+    margin-left: 145px;
+    margin-top: -60px;
 }
 
 .creative {
     color: #E9D72A;
     font-family: 'Sansita', sans-serif;
-    font-size: 3vw;
+    font-size: 35px;
     position:absolute;
-    margin-left: 15%;
-    margin-top: -3%;
+    margin-left: 135px;
+    margin-top: -30px;
     
 }
 
 .recent {
     color:#A26FAE;
     font-family: 'Sansita', sans-serif;
-    font-size: 7vw;
+    font-size: 96px;
     position: relative;
-    width: 20%;
     margin-top: 0px;
     margin-bottom:0px;
-    margin-left: 55%;
-}
-
-.fullwork {
-    align-items: left;
+    margin-left: 990px;
 }
 
 .work {
-  width: 48%;
-  padding-left: 30%;
-}
+  width: 10px;
+} 
 
 p {
     color: white;
     font-family: 'Open Sans', sans-serif;
     font-style: bold;
-    font-size: 1.5vw;
-    margin-top: 0.5%;
-    margin-bottom: 0.5%;
-    margin-left: 30%;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left: 370px;
 }
 
 @media only screen and (max-width: 930px) {
+  .gif {
+    width: 97.5px;
+  }
+
+  .fluid {
+    margin-left: 121.875px;
+    margin-top: -50px;
+    
+  }
+
+  .creative {
+    margin-left: 112px;
+    margin-top: -25px; 
+  }
+}
   .recent {
     margin-left: 63%;
   }
@@ -143,6 +163,20 @@ p {
     margin-left: 20%;
   }
   
+
+@media only screen and (max-width: 600px) {
+  .gif {
+    width: 75px;
+  }
+  .work {
+    width: 75%;
+    padding-left:10%;
+  }
+  
+  p {
+    margin-left: 10%;
+  }
+
 }
 
 
