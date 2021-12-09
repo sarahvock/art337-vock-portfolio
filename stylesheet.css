@@ -4,7 +4,7 @@
 
 /* The sidepanel menu */
 .sidepanel {
-  height: 200px; /* Specify a height */
+  height: 15vw; /* Specify a height */
   width: 0; /* 0 width - change this with JavaScript */
   position: absolute; /* Stay in place */
   z-index: 1; /* Stay on top */
@@ -13,35 +13,36 @@
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 0; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
-  margin-left: 1500px;
-  margin-top: 90px;
-  padding-top: 5px;
-  border-style:dashed;
-  border-color: yellow;
+  margin-left: 83vw;
+  margin-top: 7.4vw;
+  padding-top: 0.4vw;
+  box-align: right;
 }
 
 /* The sidepanel links */
 .sidepanel a {
   text-decoration: none;
-  font-size: 25px;
+  font-size: 1.5vw;
   font-family: 'Open Sans', sans-serif; 
   font-weight: bold;
   color:#2ADBD3;
   display: block;
   transition: 0.3s;
   text-align: right;
+  margin-left: 3.5vw; 
 }
 
 .about {
-  margin-top: 40px;
+  margin-top: 4vw;
 }
 
 .portfolio{
-  padding-top: 5px;
+  padding-top: 0.4vw;
 }
 
 .recent {
-  padding-top: 5px;
+  font-size: 6.4vw;
+  padding-top: 0.4vw;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -53,22 +54,22 @@
 .sidepanel .closebtn {
   position: absolute;
   top: 0;
-  font-size: 40px;
+  font-size: 3vw;
   box-align: top;
   margin-top: 0;
-  margin-left: 125px;
-  margin-bottom: 15px;
+  margin-left: 9vw;
+  margin-bottom: 1vw;
 }
 
 /* Style the button that is used to open the sidepanel */
 .openbtn {
-  font-size: 60px;
+  font-size: 4vw;
   cursor: pointer;
   background: none;
   border: none;
   color: #7AEC29;
-  margin-top: -80px;
-  margin-left: 1650px;
+  margin-top: -5vw;
+  margin-left: 90vw;
   outline: none;
   
 }
@@ -79,8 +80,8 @@
 
 .gif {
     position: relative;
-    width:120px;
-    left:5px;
+    width:10vw;
+    left:1vw;
     padding-top: 0;
 }
 
@@ -89,94 +90,153 @@ body {
    background-color: black; 
    font-family: 'Open Sans', sans-serif;
    font-weight: bold;
-   font-size: 12px;
+   font-size: 1.5vw;
 }
 
 .fluid {
     color: #EC2B7B;
     font-family: 'Sansita', sans-serif;
-    font-size: 35px;
+    font-size: 2.2vw;
     position:absolute;
-    margin-left: 145px;
-    margin-top: -60px;
+    margin-left: 12.5vw;
+    margin-top: -5vw;
 }
 
 .creative {
     color: #E9D72A;
     font-family: 'Sansita', sans-serif;
-    font-size: 35px;
+    font-size: 2.2vw;
     position:absolute;
-    margin-left: 135px;
-    margin-top: -30px;
-    
+    margin-left: 11.5vw;
+    margin-top: -2.5vw;
 }
 
-.recent {
+.recent-title {
     color:#A26FAE;
     font-family: 'Sansita', sans-serif;
-    font-size: 96px;
+    font-size: 5vw;
     position: relative;
-    margin-top: 0px;
-    margin-bottom:0px;
-    margin-left: 990px;
+    margin-top: 0vw;
+    margin-bottom:0vw;
+    margin-left:57vw;
 }
 
 .work {
-  width: 10px;
+  max-width: 45vw;
+  margin-left: 27.5vw;
 } 
 
 p {
     color: white;
     font-family: 'Open Sans', sans-serif;
     font-style: bold;
-    font-size: 12px;
-    margin-top: 5px;
-    margin-left: 370px;
+    margin-left: 27.5vw;
+    margin-top: .75vw;
 }
 
-@media only screen and (max-width: 930px) {
-  .gif {
-    width: 97.5px;
+.title {
+  font-size: .9vw;
+}
+
+.artist {
+  font-size: .9vw;
+  margin-top: -.75vw;
+}
+
+.year {
+  margin-top: -.25vw;
+  font-size: 0.85vw;
+  
+}
+
+.medium {
+  font-size: 0.85vw;
+  margin-top: -.75vw;
+}
+
+.size {
+  font-size: 0.85vw;
+  margin-top: -.75vw;
+}
+
+
+@media only screen and (max-width: 925px) {
+  .recent-title{
+    margin-left:64vw;
   }
 
-  .fluid {
-    margin-left: 121.875px;
-    margin-top: -50px;
+  .work {
+    max-width: 55vw;
+    margin-left: 25vw;
+  }
+
+  p{
+    margin-left: 25vw;
+  }
+
+  .title {
+    font-size: 1.5vw;
+  }
+  
+  .artist {
+    font-size: 1.5vw;
+    margin-top: -1.25vw;
+  }
+  
+  .year {
+    margin-top: -.25vw;
+    font-size: 1.25vw;
     
   }
-
-  .creative {
-    margin-left: 112px;
-    margin-top: -25px; 
-  }
-}
-  .recent {
-    margin-left: 63%;
-  }
-
-  .work {
-    width: 65%;
-    padding-left: 20%;
-  }
-
-  p {
-    margin-left: 20%;
+  
+  .medium {
+    font-size: 1.25vw;
+    margin-top: -.75vw;
   }
   
+  .size {
+    font-size: 1.25vw;
+    margin-top: -.75vw;
+  }
 
 @media only screen and (max-width: 600px) {
-  .gif {
-    width: 75px;
+  .recent-title{
+    margin-left:67vw;
+    margin-top: 5vw;
+    margin-bottom: 1vw;
   }
+
   .work {
-    width: 75%;
-    padding-left:10%;
+    max-width: 65vw;
+    margin-left: 17vw;
+  }
+
+  p{
+    margin-left: 17vw;
+  }
+
+  .title {
+    font-size: 1.5vw;
   }
   
-  p {
-    margin-left: 10%;
+  .artist {
+    font-size: 1.5vw;
+    margin-top: -1.25vw;
   }
-
-}
-
+  
+  .year {
+    margin-top: -.25vw;
+    font-size: 1.25vw;
+    
+  }
+  
+  .medium {
+    font-size: 1.25vw;
+    margin-top: -.75vw;
+  }
+  
+  .size {
+    font-size: 1.25vw;
+    margin-top: -.75vw;
+  }
 
